@@ -1,0 +1,28 @@
+{
+  "name": "test-app",
+  "short_name": "test",
+  "description": "cool",
+  "lang": "ru",
+  "dir": "auto",
+  "orientation": "any",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "id": "/",
+  "theme_color": "#8936FF",
+  "background_color": "#2EC6FE",
+  "icons": [
+    {
+      "src": "/icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon512_rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
