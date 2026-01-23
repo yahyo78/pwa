@@ -5,7 +5,7 @@ const withPWA = require("next-pwa")({
   register: true,
   skipWaiting: true,
   fallbacks: {
-    document: "/~offline", // Вақте ки саҳифа бор намешавад, инро нишон медиҳад
+    document: "/offline", // Вақте ки саҳифа бор намешавад, инро нишон медиҳад
   },
 });
 
