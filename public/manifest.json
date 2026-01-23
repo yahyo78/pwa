@@ -11,6 +11,9 @@
   "id": "/",
   "theme_color": "#8936FF",
   "background_color": "#2EC6FE",
+  "scripts": {
+    "build": "next build --webpack"
+  },
   "icons": [
     {
       "src": "/icon512_maskable.png",
