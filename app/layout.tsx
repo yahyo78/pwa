@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import PWARegister from "@/PWARegister";
 
 export const metadata: Metadata = {
   manifest: '/manifest.json',
@@ -33,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+  <PWARegister />
         {children}
       </body>
     </html>
