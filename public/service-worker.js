@@ -5,9 +5,15 @@ self.addEventListener("install", (event) => {
     caches.open(CACHE).then((cache) =>
       cache.addAll([
         "/",
-        "/attendance",
-        "/login"
       ])
     )
+  );
+});
+
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
   );
 });
